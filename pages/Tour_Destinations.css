@@ -6,10 +6,6 @@
     font-family: var(--font_main);
 }
 
-html {
-    overflow-x: hidden;
-}
-
 .flex {
     display: flex;
 }
@@ -110,7 +106,7 @@ html {
 }
 
 .scrollup {
-    /* position: fixed; */
+    position: fixed;
     bottom: 20px;
     right: 20px;
     width: 40px;
@@ -121,7 +117,6 @@ html {
     border-radius: 5px;
     text-align: center;
     font-size: 24px;
-    /* z-index: 999; */
 }
 
 body {
@@ -132,6 +127,7 @@ body {
     overflow-x: hidden;
     color: #666;
 }
+
 
 /* Banner */
 #banner img {
@@ -182,47 +178,132 @@ body {
     color: #FFF;
 }
 
+/* Destinations_img */
+.bg img {
+    width: 100%;
+    position: relative;
+}
+
+#destinations_img {
+    position: absolute;
+    top: 580px;
+    width: 80%;
+    margin: 0 10%;
+}
+
+#destinations_img .img_infor {
+    margin: 0 15px;
+}
+
+#destinations_img .des_img_big {
+    width: 100%;
+}
+
+#destinations_img .img_small {
+    flex-wrap: wrap;
+}
+
+#destinations_img .img_big .img_infor {
+    height: 550px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+#destinations_img .img_small .img_infor {
+    width: 30.8%;
+    height: 160px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+#destinations_img .des_img_small {
+    width: 100%;
+}
+
+#destinations_img .infor {
+    position: relative;
+    z-index: 6;
+    left: 30px;
+    bottom: 100px;
+}
+
+#destinations_img .text_brush {
+    color: var(--color_brush);
+    font-size: 24px;
+    font-family: var(--font2);
+}
+
+#destinations_img .text_country {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+#destinations_img .des_img {
+    display: block;
+    transition: all .3s ease;
+}
+
+#destinations_img .des_img:hover {
+    transform: scale(1.3);
+}
+
+#destinations_img .img_infor {
+    display: block;
+    overflow: hidden;
+}
+
 /* Footer */
-#footer{
+#footer {
     width: 100%;
     float: left;
     height: auto;
     padding: 70px 0;
     background: #17233E url(./img/footer-bg.png) no-repeat top center;
+    position: absolute;
+    top: 1700px;
 }
-#footer .container{
+
+#footer .container {
     width: 84vw;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
+
 #footer .row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
-#footer .row  .col1 {
+
+#footer .row .col1 {
     flex: 0 0 25%;
     max-width: 25%;
     padding: 0 15px;
 }
-#footer .row  .col2 {
+
+#footer .row .col2 {
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
     padding: 0 15px;
-} 
-#footer .row  .col3 {
+}
+
+#footer .row .col3 {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
     padding: 0 15px;
 }
+
 #footer .row .footer-widget {
     width: 100%;
     float: left;
     height: auto;
     margin: 0 0 30px;
 }
+
 #footer .row h5 {
     color: #fff;
     margin: 0 0 30px;
@@ -230,24 +311,29 @@ body {
     font-size: 24px;
     font-weight: 600;
 }
-#footer .row ul{
+
+#footer .row ul {
     list-style-type: none;
 }
+
 #footer .row a {
     color: #fff;
     opacity: 0.8;
     outline: none !important;
     text-decoration: none;
 }
+
 #footer .row p {
     color: #fff;
     opacity: 0.8;
 }
+
 #footer .subcribe-form {
     position: relative;
     height: 74px;
     margin-top: 30px;
 }
+
 #footer .subcribe-form input {
     font-size: 16px;
     font-weight: 400;
@@ -260,6 +346,7 @@ body {
     padding: 20px;
     width: auto;
 }
+
 #footer .subcribe-form button {
     top: 0;
     right: 0;
@@ -274,13 +361,17 @@ body {
     padding: 10px 25px;
     width: auto;
 }
+
 #footer .footer-left {
     display: flex;
     align-items: center;
 }
-#footer .mt-5, .my-5 {
-    margin-top: 3rem!important;
+
+#footer .mt-5,
+.my-5 {
+    margin-top: 3rem !important;
 }
+
 #footer .col-md-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
@@ -290,31 +381,37 @@ body {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 #footer .footer-left img {
     width: 196px;
     height: auto;
     vertical-align: middle;
     border-style: none;
 }
+
 #footer .footer-left .h-border {
     margin: 0 30px;
     height: 40px;
     border: 1px solid #818A9F;
 }
-#footer .social{
+
+#footer .social {
     text-align: center;
     justify-content: space-between;
     width: 25vw;
 }
-#footer .social i{
+
+#footer .social i {
     font-size: 30px;
     padding: 1rem;
 }
-#footer .social ul{
+
+#footer .social ul {
     align-items: center;
     justify-content: space-between;
 }
-#footer .social li{
+
+#footer .social li {
     width: 62px;
     background-color: #414c61;
     border-radius: 50%;
