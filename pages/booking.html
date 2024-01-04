@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Tourest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./booking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.0-web/css/all.min.css"
+    />
+    <style>
+      .text {
+        display: none;
+      }
+      .show-text {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header-->
+    <div id="Header">
+      <div class="container">
+        <div class="header-main flex">
+          <a href="../index.html">
+            <img
+              src="../img/logo.jpg"
+              alt="HIT travel"
+            />
+          </a>
+          <div class="navbar-collapse flex">
+            <div class="navbar flex">
+              <ul class="nav-list flex">
+                <li class="nav-item">
+                  <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./Tour_List.html">Tours</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./Tour_Destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./Tour_Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="booking-button">
+              <a href="./booking.html"> Booking Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Scroll up-->
+    <a href="#" class="scrollup">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!--Main-->
+    <main id="main">
+      <section
+        class="small-banner"
+        style="
+          background: url('http://tourest.webtravel.vn/images/sub-page.png');
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="banner-content">
+                <h2>Booking</h2>
+                <nav aria-label="small">
+                  <ol class="small">
+                    <li class="small-item">
+                      <a href="../index.html">Home</a>
+                    </li>
+                    <li class="small-item active">/ Booking</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing booking">
+        <div class="container">
+          <div class="row">
+            <div class="booking-bg">
+              <form action="" class="row g-3">
+                <div class="col-sm-12">
+                  <h2 class="form-hader">Book This Tour</h2>
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control booking-from"
+                    id="inputAddress"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Enter email address"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <select id="country" class="choose-option form-select">
+                    <option selected>Country</option>
+                    <option value="">Viet Nam</option>
+                    <option value="">United States</option>
+                    <option value="">France</option>
+                    <option value="">UK</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group date">
+                    <input
+                      type="text"
+                      data-provide="datepicker"
+                      class="form-control start-date hasDatepicker"
+                      placeholder="Date to"
+                      id="dateto"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <select                    
+                    id="date_to"
+                    class="choose-option form-select"                
+                  >
+                    <option selected>Choose time</option>
+                    <option value="">6:00 PM</option>
+                    <option value="">7:00 PM</option>
+                    <option value="">8:00 PM</option>
+                  </select>          
+                </div>
+                <div class="col-md-6">
+                  <select                    
+                    id="guest"
+                    class="choose-option form-select"                  
+                  >
+                    <option value="" selected>Guests</option>
+                    <option value="">Guests 1</option>
+                    <option value="">Guests 2</option>
+                    <option value="">Guests 3</option>
+                  </select>                
+                </div>
+                <div class="col-md-12">
+                  <p class="from-text">Add Extra</p>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-label"
+                      id="gridCheck"
+                    />
+                    <label for="gridCheck" class="form-check-label">
+                      Service per booking
+                      <span class="booking-price">$50.00</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="gridCheck1"
+                    />
+                    <label for="gridCheck1" class="form-check-label">
+                      Service per person</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <span class="service-price">Adult: $50</span>
+                    <span class="service-price">Youth: $55</span>
+                    <span class="service-price">Children: $30</span>
+                  </p>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="booking-bt btn btn-primary"
+                    style="width: 100%"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="faq">
+              <div class="col-md-12">
+                <h2 class="faq-hedar">Frequently Asked Question</h2>
+                <div class="accordion accordion-flush" id="accordionExample">
+                  <article class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button collaped collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        <p>How to book the new tour for 2 persons?</p>
+                        <span class="icon"
+                          ><i class="fa-solid fa-angle-down"></i
+                        ></span>
+                      </button>
+                    </h2>
+
+                    <div class="card-body text">
+                      <p>
+                        Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly
+                        believable. If you are going to use a passage of lorem
+                        Ipsum you need to be sure there isn't anything.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="accordion-item 2">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collaped collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <p>Why are your tours so expensive?</p>
+                        <span class="icon"
+                          ><i class="fa-solid fa-angle-down"></i
+                        ></span>
+                      </button>
+                    </h2>
+
+                    <div class="card-body text 2">
+                      <p>
+                        Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly
+                        believable. If you are going to use a passage of lorem
+                        Ipsum you need to be sure there isn't anything.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="accordion-item 3">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collaped collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <p>Which payment methods are acceptable?</p>
+                        <span class="icon"
+                          ><i class="fa-solid fa-angle-down"></i
+                        ></span>
+                      </button>
+                    </h2>
+
+                    <div class="card-body text 3">
+                      <p>
+                        Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly
+                        believable. If you are going to use a passage of lorem
+                        Ipsum you need to be sure there isn't anything.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer id="footer">
+      <div class="container">
+        <div class="row flex">
+          <div class="col1">
+            <div class="footer-widget">
+              <h5>Top destination</h5>
+              <ul>
+                <li><a href="./Tour_Detail.html">Indonesia, Jakarta</a></li>
+                <li><a href="./Tour_Detail.html">Maldives, Malé</a></li>
+                <li><a href="./Tour_Detail.html">Australia, Canberra</a></li>
+                <li><a href="./Tour_Detail.html">Thailand, Bangkok</a></li>
+                <li><a href="./Tour_Detail.html">Morocco, Rabat</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="footer-widget">
+              <h5>Categories</h5>
+              <ul>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Lifestyle</a></li>
+                <li><a href="">Fashion</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Morocco, Rabat</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="footer-widget">
+              <h5>Quick links</h5>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./Tour_List.html">Tours</a></li>
+                <li><a href="./booking.html">Booking</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col3">
+            <div class="footer-widget">
+              <h5>Get a newsletter</h5>
+              <p>
+                For the latest deals and tips, travel no further than your inbox
+              </p>
+              <form action="" class="subcribe-form">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-9 col-md-8">
+            <div class="footer-left">
+              <img
+                src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/343431541_787273575992880_6950198603748680694_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeH8HJQ8CnO63t5GPNbLyDClrnoVCYJXGqCuehUJglcaoNpHDyiDCDZ8qRsAHmfZw_qEnNwACpcLZOyUPbzoylww&_nc_ohc=8QSnuVU5bp4AX921kEP&_nc_ht=scontent.fhan2-4.fna&oh=00_AfCAhz4kOpn0Bg0KvNJQxESLHVGofVwpLR1ILp2_siY21Q&oe=658A05A0"
+                alt=""
+              />
+              <div class="h-border"></div>
+              <div class="copyright">
+                <p>© 2023 All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+          <div class="social flex">
+            <ul class="team-social footer-social flex">
+              <li class="share-icon">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="share-icon">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="share-icon">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="share-icon">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="share-icon">
+                <a href="#">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="./lib/js/jquery-3.6.0.min.js "></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./lib/js/style.js "></script>
+    <script>
+        new WOW().init();
+    </script> -->
+    <script src="./question.js"></script>
+  </body>
+</html>

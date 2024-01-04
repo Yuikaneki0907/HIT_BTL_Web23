@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Abril_Fatface;
+    src: url(./AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: Heebo;
+    src: url(./Heebo-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Comforter_Brush;
+    src: url(./ComforterBrush-Regular.ttf);
+}
+:root{
+    /* font */
+    --font_main: Heebo;
+    --font1: Abril_Fatface;
+    --font2:Comforter_Brush;
+    font-family: Heebo;
+
+    /* color */
+    --color_main: #029E9D; 
+    --color_brush: #FDC703;
+}
