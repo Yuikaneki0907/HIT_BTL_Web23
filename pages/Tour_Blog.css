@@ -250,7 +250,14 @@ body {
     font-size: 18px;
     margin: 0 0 20px;
 }
+#blog_list .read_more{
+    justify-content: space-between; 
+    color: var(--color_main); font-weight: 600;
+}
 
+#blog_list .read_more:hover{
+    color: #17233E;
+}
 
 /* Footer */
 #footer{
