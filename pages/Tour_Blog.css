@@ -2,11 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: var(--font_main);
-}
-
-html {
-    overflow-x: hidden;
 }
 
 .flex {
@@ -197,7 +194,7 @@ body {
 #blog_list .t {
     width: max-content;
     box-shadow: #878787;
-    margin: 10px;
+    margin: 13px;
 }
 
 #blog_list img {
