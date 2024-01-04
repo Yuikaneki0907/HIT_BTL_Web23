@@ -208,10 +208,11 @@ body {
     z-index: 4;
     background-color: var(--color_brush);
     border: none;
-    padding: 14px 10px;
+    padding: 14px 12px;
     color: #FFF;
     text-align: center;
     margin: 13px;
+    font-weight: 600;
 }
 
 #blog_list .card {
