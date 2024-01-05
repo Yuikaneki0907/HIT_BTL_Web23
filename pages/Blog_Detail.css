@@ -165,7 +165,7 @@ body {
     font-weight: 500;
 }
 
-#banner .text a {
+#banner .text a,span {
     font-size: 18px;
     text-decoration: none;
     cursor: pointer;
@@ -181,6 +181,111 @@ body {
 .bg>img{
     max-width: 100%;
     position: relative;
+}
+#blog_information{
+    position: absolute;
+    top: 65%;
+    width: 80%;
+    margin: 0 10%;
+}
+
+/* left */
+#in4_left{
+    width: 66%;
+    padding: 0 15px;
+}
+#in4_left .blog_img img{
+    width: 100%;
+    height: 466px;
+    border-radius:10px;
+}
+#in4_left .blog_time{
+    padding: 14px 10px 10px;
+    background-color: var(--color_brush);
+    color: #FFF;
+    text-align: center;
+    width: max-content;
+    font-size: 16px;
+    position: absolute;
+    top:15px;
+    left: 30px;
+}
+
+#in4_left .infor_charactors{
+    padding: 22px 0 32px;
+    height: 94px;
+}
+
+#in4_left .infor_charactors .avt_img img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+#in4_left .infor_charactor h4{
+    color: #17233E;
+    font-size: 16px;
+}
+
+#in4_left .infor_charactor p{
+    color: #888;
+    font-size: 17px;
+}
+#in4_left>h5{
+    font-size: 24px;
+    color: #17233E;
+    margin: 0 0 10px;
+}
+#in4_left>p{
+    margin: 18px 0 29px;
+}
+#in4_left .list{
+    margin: 0 0 15px;
+}
+
+#in4_left .list>i{
+    background-color: var(--color_main);
+    color: #FFF;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+}
+#in4_left .list>h6{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#in4_left .blog_intro{
+    justify-content: space-between;
+}
+#in4_left .intro{
+    width: 48%;
+}
+#in4_left .intro>img{
+    width: 100%;
+    margin: 0 0 32px;
+}
+#in4_left .intro .intro_infor>p{
+    width: 10px;
+    height: 70px;
+    background-color: var(--color_main);
+}
+#in4_left .intro .intro_infor>h5{
+    font-size: 16px;
+    padding: 0 0 0 14px;
+    margin: 0 0 25px;
+    font-weight: 400;
+}
+#in4_left .tags_share{
+    justify-content: space-between;
+}
+#in4_left .tags_share p{
+    color: #17233E;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #in4_left .form_contact {
@@ -214,7 +319,7 @@ textarea {
     padding: 70px 0;
     background: #17233E url(./img/footer-bg.png) no-repeat top center;
     position: absolute;
-    top:1680px;
+    top:4680px;
 }
 #footer .container{
     width: 84vw;
