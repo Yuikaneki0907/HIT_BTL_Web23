@@ -257,6 +257,7 @@ body {
 
 #blog_list .read_more:hover{
     color: #17233E;
+    cursor:pointer;
 }
 
 /* Footer */
