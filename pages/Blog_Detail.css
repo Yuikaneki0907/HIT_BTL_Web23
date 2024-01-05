@@ -122,11 +122,11 @@
 
 body {
     background: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     position: relative;
     overflow-x: hidden;
-    color: #666;
+    color: #878787;
 }
 
 /* Banner */
@@ -178,10 +178,32 @@ body {
     color: #FFF;
 }
 
-/* Blog_List */
 .bg>img{
     max-width: 100%;
     position: relative;
+}
+
+#in4_left .form_contact {
+    padding: 30px;
+    background-color: #D6EEED;
+}
+
+#in4_left .form_contact>input,
+textarea {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #8D8E92;
+}
+
+#in4_left .form_contact button {
+    padding: 15px 25px;
+    background-color: var(--color_main);
+    font-size: 16px;
+    color: #FFF;
+    width: max-content;
+    font-weight: 800;
 }
 
 /* Footer */
